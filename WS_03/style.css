@@ -1,0 +1,262 @@
+p {
+      color: rgb(0, 17, 250);
+    }
+    
+    body {
+      background-color: #807878;
+    }
+    
+    h1 {
+      font-size: 2em;
+    }
+    .content-box {
+  padding: 18px;
+  margin: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+}
+.quote {
+        position: relative;
+        padding-left: 20px;
+        font-style: italic;
+      }
+      
+      .quote::before {
+        content: '“';
+        font-size: 40px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: lightgray;
+      }
+
+    .favorite-foods {
+      max-width: 300px;
+      max-height: 300px;
+      margin: 24px 10px;
+      padding: 24px;
+      background: linear-gradient(135deg, #e9a300, #ffffff);
+      border: 2px solid #0874b3;
+      border-radius: 18px;
+      box-shadow: 0 8px 20px rgba(110, 75, 20, 0.14);
+    }
+
+    .favorite-foods h2 {
+      margin: 0 0 8px;
+      color: #000000;
+    }
+
+    .favorite-foods p {
+      margin: 0 0 16px;
+      color: #197ddb;
+    }
+
+    .favorite-foods ol {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: food;
+    }
+
+    .favorite-foods li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 14px;
+      color: #333;
+      font-weight: 600;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(65, 45, 15, 0.08);
+      counter-increment: food;
+      transition: transform 0.2s ease;
+    }
+
+    .favorite-foods li::before {
+      display: grid;
+      width: 30px;
+      height: 30px;
+      flex-shrink: 0;
+      place-items: center;
+      color: #000000;
+      background-color: #ccce5c;
+      border-radius: 50%;
+      content: counter(food);
+    }
+
+    .favorite-foods li:hover {
+      transform: translateX(4px);
+    }
+
+    .hobbies {
+      max-width: 300px;
+      margin: 24px 10px;
+      padding: 24px;
+      background: linear-gradient(135deg, #d6f1e2, #ffffff);
+      border: 2px solid #388e64;
+      border-radius: 18px;
+      box-shadow: 0 8px 20px rgba(32, 90, 62, 0.14);
+    }
+
+    .hobbies h2 {
+      margin: 0 0 16px;
+      color: #205a3e;
+    }
+
+    .hobbies ul {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: hobby;
+    }
+
+    .hobbies li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 14px;
+      color: #333;
+      font-weight: 600;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(32, 90, 62, 0.1);
+      counter-increment: hobby;
+      transition: transform 0.2s ease;
+    }
+
+    .hobbies li::before {
+      display: grid;
+      width: 30px;
+      height: 30px;
+      flex-shrink: 0;
+      place-items: center;
+      color: #fff;
+      background-color: #388e64;
+      border-radius: 50%;
+      content: counter(hobby);
+    }
+
+    .hobbies li:hover {
+      transform: translateX(4px);
+    }
+
+    table {
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border-collapse: collapse;
+    }
+    ul.pseudo-list {
+      list-style-type: none;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 0;
+    }
+
+    .pseudo-list li:nth-child(odd) {
+        background-color: steelblue;
+      }
+      
+      .pseudo-list li:nth-child(even) {
+        background-color: white;
+      }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    
+    th {
+      background-color: #f2f2f2;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    label {
+        margin-top: 10px;
+      font-weight: bold;
+    }
+    
+    input[type="text"], input[type="email"] {
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    
+  img {
+     margin: 10px;
+    }
+
+    .image-callout {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 12px;
+      margin: 20px 10px;
+    }
+
+    .image-callout-controls {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .transition-button {
+        background-color: lightblue;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .transition-button:hover {
+        background-color: lightcoral;
+      }
+      .animation-box {
+        width: 72px;
+        height: 32px;
+        background-color: lightgreen;
+        clip-path: polygon(0 35%, 72% 35%, 72% 0, 100% 50%, 72% 100%, 72% 65%, 0 65%);
+        animation: point-toward-image 1s infinite alternate ease-in-out;
+      }
+      .filter-image {
+        filter: grayscale(100%);
+        transition: filter 0.4s ease;
+      }
+      
+      .filter-image:hover {
+        filter: grayscale(0%);
+      }
+      
+    
+      
+      @keyframes point-toward-image {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(10px);
+        }
+      }
